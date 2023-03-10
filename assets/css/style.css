@@ -5,42 +5,70 @@
     box-sizing: border-box;
 }
 
+:root{
+    --text-primary: #FFF;
+    --text-secundary: #000;
+    --font-heading: 'Poppins';
+    --font-default: 'Monteserrat';
+}
+
 html{
     font-size: 62.5%;
 }
 
+body{
+    font-family: var(--font-default);
+    color: var(--text-primary);
+}
+
 header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
     background-image: url("../imagens/ak47skin.jpg");
     background-size: cover;
     height: 100vh;
-    padding-left: 80rem;
+    padding: 1rem;
+    padding-right: 20rem;
 }
 
 h1{
     font-size: 5rem;
     font-weight: 900;
-    color: #FFF;
-    font-family: 'Poppins';
-    padding: 1rem 10rem;
-    
+    font-family: var(--font-heading);
 }
-
 
 span{
     font-size: 4rem;
+}
+
+.button{
+    background: linear-gradient(90deg,#C21B05,#BC7191);
+    padding: 1rem 3rem;
+    border-radius: 7px;
     color: #FFF;
-    padding-left: 35rem;
+    font-size: 2rem;
+    text-decoration: none;
 }
-    
-img{
-        height: 40rem;
-        width: 60rem;}
-
-h2{
-    font-size: 3rem;
+img.avatar{
+    border-radius: 50%;
+    height: 40rem;
+    width: 40rem;
+    padding: 2rem;
 }
 
-p{
-    font-size: 1.75rem;
+.section-presentation{ 
+    display: flex;
+    color: var(--text-secundary);
+    font-size: 2rem;
+}
 
+.section-presentation div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
